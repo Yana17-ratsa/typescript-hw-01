@@ -3,7 +3,10 @@ type pageType = {
   likes: number;
   accounts: string[];
   status: 'open' | 'close';
-  details?: object;
+  details?: {
+    createAt: Date;
+    updateAt: Date;
+  };
 };
 
 const page1: pageType = {
